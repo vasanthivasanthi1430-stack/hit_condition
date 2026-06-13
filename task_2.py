@@ -68,4 +68,27 @@ print("customer_name",c_name)
 print("bill_amount",bill)
 print("discount",discount)
 print("final_bill",final_bill) 
+
+
+
+            #s/n- 6
+
+
+age= int(input("Enter Age: "))
+salary = int(input("Enter Salary: "))
+experience = int(input("Enter Experience (years): "))
+existing_loan = input("Existing Loan? (yes/no): ")
+
+if age >= 21 and salary >= 30000 and experience >= 2 and existing_loan == "no":
+    print("Loan Approved")
+else:
+    if age < 21:
+        print("Loan Rejected: under age")
+    elif salary < 30000:
+        print("Loan Rejected: Salary too low")
+    elif experience < 2:
+        print("Loan Rejected: Experience less than 2 years")
+    elif existing_loan == "y":
+        print("Loan Rejected: Existing loan found")
+
    
